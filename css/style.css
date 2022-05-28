@@ -152,3 +152,11 @@ margin-bottom: 50px;
   --card-gap-left: 100px;
   --card-item: 5;
 }
+/*============Service===========*/
+
+.projects-list{
+  --card-item: 4;
+}
+.footer-cont-list{
+  --card-item: 4;
+}
