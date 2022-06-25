@@ -1,0 +1,16 @@
+.hero {
+  padding-top: 220px;
+  padding-bottom: 335px;
+  text-align: center;
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.33;
+    margin-bottom: 50px;
+  }
+}

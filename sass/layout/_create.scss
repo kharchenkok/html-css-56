@@ -1,0 +1,38 @@
+.create__icon {
+  stroke: red;
+  animation: create 3s linear infinite;
+}
+
+.create__list {
+  // --card-item: 1;
+  // @media screen and (min-width: 768px) {
+  //   --card-item: 2;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    --card-item: 3;
+  }
+}
+
+// .create__list {
+//   --card-item: 1;
+// }
+
+@keyframes create {
+  0%,
+  100% {
+    transform: scale(1);
+    stroke: red;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0);
+    stroke: #4985ff;
+    opacity: 0;
+  }
+  /* 100% {
+    transform: scale(0);
+    stroke: #4985ff;
+    opacity: 0;
+  } */
+}

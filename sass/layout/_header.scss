@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.25;
+  background-image: url(../images/first-screen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(../images/first-screen.jpg), url(../images/standart.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px auto, auto 350px;
+  background-position: left calc(50% + 340px) bottom, left calc(50% - 340px) top; */
+}
