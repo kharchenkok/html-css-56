@@ -10,4 +10,7 @@
   background-repeat: no-repeat;
   background-size: 600px auto, auto 350px;
   background-position: left calc(50% + 340px) bottom, left calc(50% - 340px) top; */
+  @include mq(retina) {
+    background-image: url(../images/first-screen@2x.jpg);
+  }
 }

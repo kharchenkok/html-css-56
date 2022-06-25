@@ -1,13 +1,24 @@
 .nav {
+  // @include mq(mob) {
+  //   flex-direction: column;
+  // }
+
   &__list {
     display: flex;
     justify-content: flex-end;
+    @include mq(mob-only) {
+      flex-direction: column;
+    }
   }
 
   &__link {
     padding-top: 40px;
     padding-bottom: 40px;
     display: block;
+    @include mq(mob-only) {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
   }
 
   &__item {
