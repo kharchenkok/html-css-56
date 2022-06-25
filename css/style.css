@@ -131,7 +131,12 @@ body {
   line-height: 1.25;
   background-image: url(../images/first-screen.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(../images/first-screen.jpg), url(../images/standart.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px auto, auto 350px;
+  background-position: left calc(50% + 340px) bottom, left calc(50% - 340px) top; */
 }
 
 .hero {
@@ -147,6 +152,29 @@ body {
   font-size: 48px;
   line-height: 1.33;
   margin-bottom: 50px;
+}
+
+.create-icon {
+  stroke: red;
+  animation: create 3s linear infinite;
+}
+@keyframes create {
+  0%,
+  100% {
+    transform: scale(1);
+    stroke: red;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0);
+    stroke: #4985ff;
+    opacity: 0;
+  }
+  /* 100% {
+    transform: scale(0);
+    stroke: #4985ff;
+    opacity: 0;
+  } */
 }
 
 /* Standart___________________________________ */
