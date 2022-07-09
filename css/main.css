@@ -275,8 +275,23 @@ body {
 
 .projects-list {
   --card-item: 4;
+  margin-bottom: 50px;
+}
+
+.projects {
+  background-color: aliceblue;
 }
 
 .footer-cont-list {
   --card-item: 4;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */
