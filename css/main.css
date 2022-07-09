@@ -279,6 +279,10 @@ body {
   margin-bottom: 30px;
 }
 
+.projects {
+  background-color: aliceblue;
+}
+
 .projects-text {
   margin-bottom: 30px;
 }
@@ -292,4 +296,14 @@ body {
 
 .footer-cont-list {
   --card-item: 4;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */
