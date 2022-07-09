@@ -1,0 +1,16 @@
+.service{
+    background: linear-gradient(to bottom, blue, blue 50%, white 70%, white);
+    
+}
+.service-list{
+    counter-reset: item;
+    .card-item{
+        counter-increment: item;
+    }
+}
+.service-title{
+    // counter-increment: item;
+    &::before {
+        content: "0" counter(item) ".";
+    }
+}

@@ -34,6 +34,8 @@
           </ul>
         </div>
       </nav>
+    </header>
+    <main>
       <!-- Hero -->
       <section class="hero">
         <div class="container">
@@ -42,8 +44,6 @@
           <button class="button" type="button">Наші проекти</button>
         </div>
       </section>
-    </header>
-    <main>
       <section class="section create">
         <div class="container">
           <h2 class="section-title">Ми створюємо мобільні додатки для великих корпорацій</h2>
@@ -52,24 +52,24 @@
             Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
           </p>
           <ul class="list create__list card-set">
-            <li class="card-item">
-              <svg class="create__icon" width="90" height="90">
+            <li class="card-item create-item">
+              <!-- <svg class="create__icon" width="90" height="90">
                 <use href="./images/sprite.svg#icon-create"></use>
-              </svg>
+              </svg> -->
               <h3 class="item-title">Створення сайтів</h3>
               <p>Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p>
             </li>
-            <li class="card-item">
-              <svg class="create__icon" width="90" height="90">
+            <li class="card-item create-item">
+              <!-- <svg class="create__icon" width="90" height="90">
                 <use href="./images/sprite.svg#icon-create"></use>
-              </svg>
+              </svg> -->
               <h3 class="item-title">Створення сайтів</h3>
               <p>Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p>
             </li>
-            <li class="card-item">
-              <svg class="create__icon" width="90" height="90">
+            <li class="card-item create-item">
+              <!-- <svg class="create__icon" width="90" height="90">
                 <use href="./images/sprite.svg#icon-create"></use>
-              </svg>
+              </svg> -->
               <h3 class="item-title">Створення сайтів</h3>
               <p>Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p>
             </li>
@@ -160,7 +160,30 @@
           <ul class="list service-list card-set">
             <li class="card-item">
               <img src="./images/work.jpg" alt="Співробітники в офісі" width="350" height="300" />
-              <h3 class="item-title">01. Дослідження і упаковка</h3>
+              <h3 class="item-title service-title">Дослідження і упаковка</h3>
+              <p>
+                Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.
+                Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
+              </p>
+              <a href="">Детальніше</a>
+            </li>
+            <li class="card-item">
+              <picture>
+                <source
+                  srcset="./images/work.webp 1x, ./images/work@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./images/work.jpg 1x, ./images/work@2x.jpg 2x" type="image/jpeg" />
+                <img
+                  src="./images/work.jpg"
+                  loading="lazy"
+                  alt="Співробітники в офісі"
+                  width="350"
+                  height="300"
+                />
+              </picture>
+
+              <h3 class="item-title service-title">Дослідження і упаковка</h3>
               <p>
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.
                 Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
@@ -169,16 +192,7 @@
             </li>
             <li class="card-item">
               <img src="./images/work.jpg" alt="Співробітники в офісі" width="350" height="300" />
-              <h3 class="item-title">01. Дослідження і упаковка</h3>
-              <p>
-                Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.
-                Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
-              </p>
-              <a href="">Детальніше</a>
-            </li>
-            <li class="card-item">
-              <img src="./images/work.jpg" alt="Співробітники в офісі" width="350" height="300" />
-              <h3 class="item-title">01. Дослідження і упаковка</h3>
+              <h3 class="item-title service-title">Дослідження і упаковка</h3>
               <p>
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.
                 Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
@@ -197,7 +211,47 @@
           </p>
           <ul class="list projects-list card-set">
             <li class="card-item">
-              <a href=""><img src="./images/project.jpg" alt="Фото проекту" /></a>
+              <a href="">
+                <picture>
+                  <source
+                    srcset="./images/project_lg.webp 1x, ./images/project_lg@2x.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/project_lg.jpg 1x, ./images/project_lg@2x.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="./images/project_md.webp 1x, ./images/project_md@2x.webp 2x"
+                    media="(min-width:768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/project_md.jpg 1x, ./images/project_md@2x.jpg 2x"
+                    media="(min-width:768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="./images/project.webp 1x, ./images/project@2x.webp 2x"
+                    media="(max-width:767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/project.jpg 1x, ./images/project@2x.jpg 2x"
+                    media="(max-width:767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/project.jpg"
+                    alt="Фото проекту"
+                    width="255"
+                    height="255"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </li>
             <li class="card-item">
               <a href=""><img src="./images/project.jpg" alt="Фото проекту" /></a>
